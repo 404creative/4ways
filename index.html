@@ -1545,6 +1545,7 @@ main#home>section#listings{padding-top:40px}
 .bin.out small b{color:var(--brand)}
 .bin.out .btn-wa,.bin.out .btn-wa:hover{background:var(--brand);box-shadow:none}
 .bin.out .btn-wa:hover{background:var(--brand2)}
+footer .logo{justify-content:flex-end}
 </style>
 </head>
 <body>
@@ -1791,8 +1792,8 @@ main#home>section#listings{padding-top:40px}
       <div class="vm-b"><span class="ti"><svg-i data-i="key" data-s="22"></svg-i></span><h2>مهمتنا</h2><p>نحوّل رؤيتك لحقيقة: نسمعك، ونرشحلك الفرص اللي تناسبك فعلاً من مطورين موثوقين، ونفضل معاك لحد الاستلام.</p></div>
     </section>
     <section id="board">
-      <h2 class="ab-h">فريق الإدارة</h2>
-      <p class="ab-sub">تعرّف على الفريق اللي بيقود فور وايز، بخبرة في السوق العقاري المصري وبمعرفة قريبة بالمطورين والمشاريع.</p>
+      <h2 class="ab-h">المؤسسين</h2>
+      <p class="ab-sub">تعرّف على مؤسسي فور وايز، بخبرة في السوق العقاري المصري وبمعرفة قريبة بالمطورين والمشاريع.</p>
       <div class="board" id="abBoard"></div>
     </section>
     <section>
@@ -1816,7 +1817,7 @@ main#home>section#listings{padding-top:40px}
   <div class="wrap">
     <div class="cols">
       <div><div class="logo"><span class="mark" role="img" aria-label="4 Ways"></span><span><b>WAYS</b><small>Real Estate</small></span></div>
-        <p>Building tomorrow's communities. مساحات أفضل، ومستقبل أقوى، وقيمة تدوم.</p>
+        <p><bdi dir="ltr">Building tomorrow's communities.</bdi> مساحات أفضل، ومستقبل أقوى، وقيمة تدوم.</p>
         <a href="tel:+201009963111" dir="ltr" style="text-align:right">010 09963111</a><span>القاهرة الجديدة، مصر</span><a href="mailto:4ways54@gmail.com">4ways54@gmail.com</a>
         <div class="social">
           <a href="https://www.facebook.com/profile.php?id=61552015337811" target="_blank" rel="noopener" aria-label="فيسبوك" title="فيسبوك"><svg-i data-i="fb" data-s="18"></svg-i></a>
@@ -1824,7 +1825,7 @@ main#home>section#listings{padding-top:40px}
           <a href="tel:+201009963111" aria-label="اتصل بينا" title="اتصل بينا"><svg-i data-i="phone" data-s="18"></svg-i></a>
           <a href="mailto:4ways54@gmail.com" aria-label="الإيميل" title="الإيميل"><svg-i data-i="mail" data-s="18"></svg-i></a>
         </div></div>
-      <div><h5>فور وايز</h5><a onclick="openAbout()">عنا</a><a onclick="openAbout('board')">فريق الإدارة</a><a onclick="openPage('blog')">المدونة</a><a onclick="openLead()">اطلب وحدتك</a></div>
+      <div><h5>فور وايز</h5><a onclick="openAbout()">عنا</a><a onclick="openAbout('board')">المؤسسين</a><a onclick="openPage('blog')">المدونة</a><a onclick="openLead()">اطلب وحدتك</a></div>
       <div><h5>مناطق</h5><div id="fAreas"></div></div>
       <div><h5>مشروعات</h5><div id="fProjects"></div></div>
       <div><h5>مطورين</h5><div id="fDevs"></div></div>
@@ -2575,7 +2576,7 @@ function verifyOtp(){
 /* ===== About page ===== */
 const ABOUT = {
   // placeholders until the real board members are sent: [name, role, english title, photo]
-  board: [["أحمد يحيى", "الرئيس التنفيذي", "CEO"], ["عبد الرحمن زكريا", "مدير التسويق", "CMO"], ["خالد يحيى", "رئيس المبيعات", "Head of Sales"], ["هشام فرحان", "مدير المبيعات", "Sales Director"]],
+  board: [["عبدالرحمن زكريا", "شريك مؤسس", "Co-Founder"], ["أحمد يحيى", "شريك مؤسس", "Co-Founder"]],
   services: [["sparkles", "استشارة شراء مجانية", "نسمعك ونرشحلك أنسب الفرص لميزانيتك وهدفك.", () => { closeAbout(); openLead(); }],
     ["scale", "مقارنة ذكية", "قارن 3 وحدات جنب بعض وخُد رأي واضح.", () => { closeAbout(); showResults(); }],
     ["globe", "خريطة المشاريع", "استكشف المناطق والمشاريع على خريطة 3D.", () => { closeAbout(); $("mapsec").scrollIntoView(); }],
