@@ -1791,10 +1791,9 @@ main#home>section#listings{padding-top:40px}
       <div class="vm-b"><span class="ti"><svg-i data-i="key" data-s="22"></svg-i></span><h2>مهمتنا</h2><p>نحوّل رؤيتك لحقيقة: نسمعك، ونرشحلك الفرص اللي تناسبك فعلاً من مطورين موثوقين، ونفضل معاك لحد الاستلام.</p></div>
     </section>
     <section id="board">
-      <h2 class="ab-h">مجلس الإدارة</h2>
+      <h2 class="ab-h">فريق الإدارة</h2>
       <p class="ab-sub">تعرّف على الفريق اللي بيقود فور وايز، بخبرة في السوق العقاري المصري وبمعرفة قريبة بالمطورين والمشاريع.</p>
       <div class="board" id="abBoard"></div>
-      <p class="ab-note">الأسماء والصور أماكن محجوزة لحد ما توصلنا بيانات أعضاء مجلس الإدارة.</p>
     </section>
     <section>
       <h2 class="ab-h">خدماتنا</h2>
@@ -1825,7 +1824,7 @@ main#home>section#listings{padding-top:40px}
           <a href="tel:+201009963111" aria-label="اتصل بينا" title="اتصل بينا"><svg-i data-i="phone" data-s="18"></svg-i></a>
           <a href="mailto:4ways54@gmail.com" aria-label="الإيميل" title="الإيميل"><svg-i data-i="mail" data-s="18"></svg-i></a>
         </div></div>
-      <div><h5>فور وايز</h5><a onclick="openAbout()">عنا</a><a onclick="openAbout('board')">مجلس الإدارة</a><a onclick="openPage('blog')">المدونة</a><a onclick="openLead()">اطلب وحدتك</a></div>
+      <div><h5>فور وايز</h5><a onclick="openAbout()">عنا</a><a onclick="openAbout('board')">فريق الإدارة</a><a onclick="openPage('blog')">المدونة</a><a onclick="openLead()">اطلب وحدتك</a></div>
       <div><h5>مناطق</h5><div id="fAreas"></div></div>
       <div><h5>مشروعات</h5><div id="fProjects"></div></div>
       <div><h5>مطورين</h5><div id="fDevs"></div></div>
@@ -2576,7 +2575,7 @@ function verifyOtp(){
 /* ===== About page ===== */
 const ABOUT = {
   // placeholders until the real board members are sent: [name, role, english title, photo]
-  board: [["اسم رئيس مجلس الإدارة", "رئيس مجلس الإدارة", "Chairman"], ["اسم الرئيس التنفيذي", "الرئيس التنفيذي", "CEO"], ["اسم مدير المبيعات", "مدير المبيعات", "Head of Sales"], ["اسم مدير التسويق", "مدير التسويق", "Head of Marketing"]],
+  board: [["أحمد يحيى", "الرئيس التنفيذي", "CEO"], ["عبد الرحمن زكريا", "مدير التسويق", "CMO"], ["خالد يحيى", "رئيس المبيعات", "Head of Sales"], ["هشام فرحان", "مدير المبيعات", "Sales Director"]],
   services: [["sparkles", "استشارة شراء مجانية", "نسمعك ونرشحلك أنسب الفرص لميزانيتك وهدفك.", () => { closeAbout(); openLead(); }],
     ["scale", "مقارنة ذكية", "قارن 3 وحدات جنب بعض وخُد رأي واضح.", () => { closeAbout(); showResults(); }],
     ["globe", "خريطة المشاريع", "استكشف المناطق والمشاريع على خريطة 3D.", () => { closeAbout(); $("mapsec").scrollIntoView(); }],
