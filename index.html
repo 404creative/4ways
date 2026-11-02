@@ -1533,6 +1533,18 @@ main#home>section#listings{padding-top:40px}
 @media(max-width:700px){.sp-bar{flex-wrap:wrap}.sp-q{flex:1 0 100%}.sp-sort,.sp-btn{flex:1;height:44px;padding:0 10px;font-size:13px;justify-content:center}.sp-bar>.sp-btn:nth-of-type(1){display:none}
   .sr-card{grid-template-columns:1fr}.sr-img{min-height:200px}.sr-foot{gap:14px}.sr-cta{width:100%;margin:0}.sr-cta .btn-line{flex:1}.sp-units{grid-template-columns:1fr!important}}
 #searchPage{overflow-x:clip}
+/* simple, flat actions: black on light surfaces, white on dark ones */
+.btn-accent,.btn-accent:hover{background:var(--brand)!important;color:#fff!important;box-shadow:none!important}
+.btn-accent:hover{background:var(--brand2)!important}
+.launch .btn-accent,.cmpbar .btn-accent,#skipBtn,.vbtns .vbook{background:#fff!important;color:var(--brand)!important;box-shadow:none!important}
+.launch .btn-accent:hover,.cmpbar .btn-accent:hover,#skipBtn:hover,.vbtns .vbook:hover{background:#efede9!important}
+.bin.out{background:#fff;border-color:#e7e5e0;color:var(--ink)}
+.bin.out .fl{color:var(--muted)}
+.bin.out>b{color:var(--brand)}
+.bin.out small{color:var(--ink2)}
+.bin.out small b{color:var(--brand)}
+.bin.out .btn-wa,.bin.out .btn-wa:hover{background:var(--brand);box-shadow:none}
+.bin.out .btn-wa:hover{background:var(--brand2)}
 </style>
 </head>
 <body>
