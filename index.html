@@ -2133,9 +2133,8 @@ const RAW = [
   {id:33,title:"شاليه بفيو لاجون",project:"سيدي بيتش",dev:"مارينا ديفلوبمنتس",area:"sahel",type:"chalet",beds:2,baths:2,size:100,price:8.7e6,down:10,years:7,delivery:"2028",finished:false,daysAgo:5,left:4,offerDays:0,img:IMG("1512917774080-9991f1c4c750"),video:""},
   {id:34,title:"شاليه بانوراما على البحر",project:"الجلالة هايتس",dev:"صن رايز",area:"sokhna",type:"chalet",beds:2,baths:2,size:105,price:6.8e6,down:10,years:8,delivery:"2028",finished:false,daysAgo:9,left:5,offerDays:2,img:IMG("1499793983690-e29da59ef1c2"),video:""},
 ];
-/* sample presenter clips (Mixkit, free license) so the stories show someone talking — replace with 4 Ways' own videos */
-const MIX = (id, q = 720) => `https://assets.mixkit.co/videos/${id}/${id}-${q}.mp4`;
-const SAMPLE_VIDEOS = {1: MIX(15797), 13: MIX(23385), 2: MIX(41272), 3: MIX(10441), 4: MIX(23755), 5: MIX(23009, 360)};
+/* latest reels from the 4 Ways Facebook page */
+const SAMPLE_VIDEOS = {1: "videos/reel1.mp4", 13: "videos/reel2.mp4", 2: "videos/reel3.mp4", 32: "videos/reel4.mp4", 21: "videos/reel5.mp4"};
 RAW.forEach(u => { if (!u.video && SAMPLE_VIDEOS[u.id]) u.video = SAMPLE_VIDEOS[u.id]; });
 /* new releases: launched recently, sold first-hand by the developer at launch prices (demo price lists) */
 const LAUNCHES = [
